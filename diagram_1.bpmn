@@ -32,6 +32,9 @@
     <bpmn:task id="Task_1cip1js">
       <bpmn:incoming>SequenceFlow_0142gat</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_0avc8v7</bpmn:outgoing>
+      <bpmn:dataOutputAssociation id="DataOutputAssociation_0dr2zgu">
+        <bpmn:targetRef>DataStoreReference_08n1flm</bpmn:targetRef>
+      </bpmn:dataOutputAssociation>
     </bpmn:task>
     <bpmn:task id="Task_0baj3dn">
       <bpmn:incoming>SequenceFlow_0490gp0</bpmn:incoming>
@@ -71,6 +74,7 @@
     <bpmn:sequenceFlow id="SequenceFlow_12i2218" sourceRef="IntermediateThrowEvent_1fda3ec" targetRef="SubProcess_1pvh69h" />
     <bpmn:dataObjectReference id="DataObjectReference_18tc9nl" dataObjectRef="DataObject_0zyhyow" />
     <bpmn:dataObject id="DataObject_0zyhyow" />
+    <bpmn:dataStoreReference id="DataStoreReference_08n1flm" />
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_06jckfs">
@@ -195,6 +199,13 @@
       <bpmndi:BPMNEdge id="DataOutputAssociation_056nf4w_di" bpmnElement="DataOutputAssociation_056nf4w">
         <di:waypoint x="311" y="322" />
         <di:waypoint x="292" y="94" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="DataStoreReference_08n1flm_di" bpmnElement="DataStoreReference_08n1flm">
+        <dc:Bounds x="984" y="317" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="DataOutputAssociation_0dr2zgu_di" bpmnElement="DataOutputAssociation_0dr2zgu">
+        <di:waypoint x="934" y="411" />
+        <di:waypoint x="984" y="365" />
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
