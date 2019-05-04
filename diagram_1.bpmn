@@ -24,6 +24,7 @@
       <bpmn:incoming>SequenceFlow_0jgyhv5</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_0fy1yxu</bpmn:outgoing>
       <bpmn:outgoing>SequenceFlow_12i2218</bpmn:outgoing>
+      <bpmn:outgoing>SequenceFlow_150nx2s</bpmn:outgoing>
     </bpmn:intermediateThrowEvent>
     <bpmn:task id="Task_06gwmx4">
       <bpmn:incoming>SequenceFlow_0fy1yxu</bpmn:incoming>
@@ -93,6 +94,10 @@
       <bpmn:incoming>SequenceFlow_0tj5skv</bpmn:incoming>
     </bpmn:exclusiveGateway>
     <bpmn:sequenceFlow id="SequenceFlow_0tj5skv" sourceRef="StartEvent_0xtibqk" targetRef="ExclusiveGateway_119oczv" />
+    <bpmn:endEvent id="EndEvent_104ebq3">
+      <bpmn:incoming>SequenceFlow_150nx2s</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="SequenceFlow_150nx2s" sourceRef="IntermediateThrowEvent_1fda3ec" targetRef="EndEvent_104ebq3" />
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_1t4b168">
@@ -253,6 +258,13 @@
         <di:waypoint x="436" y="250" />
         <di:waypoint x="271" y="250" />
         <di:waypoint x="271" y="242" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="EndEvent_104ebq3_di" bpmnElement="EndEvent_104ebq3">
+        <dc:Bounds x="657" y="220" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_150nx2s_di" bpmnElement="SequenceFlow_150nx2s">
+        <di:waypoint x="675" y="343" />
+        <di:waypoint x="675" y="256" />
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
